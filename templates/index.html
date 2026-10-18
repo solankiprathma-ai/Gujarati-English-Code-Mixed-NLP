@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code-Mixed Text Understanding</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">MULTILINGUAL NLP PROJECT</div>
+      <h1>Gujarati–English Code-Mixed<br>Text Understanding System</h1>
+      <p>Analyze mixed Gujarati, Hindi and English messages with normalization, word-level language labels, transliteration and text classification.</p>
+    </header>
+
+    <section class="panel">
+      <h2>Enter your text</h2>
+      <form method="POST">
+        <textarea name="text" placeholder="Example: Aa movie bahu saras che, but ending was not good." required>{{ input_text }}</textarea>
+        <div class="form-row">
+          <span class="hint">Tip: Try Romanized Gujarati such as “Mane aa movie bahu game che”.</span>
+          <button type="submit">Analyze text →</button>
+        </div>
+      </form>
+    </section>
+
+    {% if result %}
+    <section class="results">
+      <h2>Analysis results</h2>
+      <div class="summary-grid">
+        <article class="result-card"><span>Sentiment</span><strong>{{ result.sentiment }}</strong></article>
+        <article class="result-card"><span>Intent</span><strong>{{ result.intent }}</strong></article>
+        <article class="result-card"><span>Topic</span><strong>{{ result.topic }}</strong></article>
+      </div>
+      <div class="panel">
+        <h3>Normalized text</h3>
+        <p class="output">{{ result.normalized }}</p>
+        <h3>Gujarati transliteration (dictionary-based)</h3>
+        <p class="output">{{ result.transliteration }}</p>
+        <p class="hint">Transliteration is a best-effort demo. Unknown or ambiguous Romanized words may remain unchanged.</p>
+      </div>
+      <div class="panel">
+        <h3>Word-level language identification</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Token</th><th>Predicted language</th></tr></thead>
+            <tbody>
+            {% for item in result.word_labels %}
+              <tr><td>{{ item.word }}</td><td><span class="tag">{{ item.language }}</span></td></tr>
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    {% endif %}
+    <footer>Academic prototype • Baseline ML models • Use a larger, manually labeled dataset for reliable evaluation</footer>
+  </main>
+</body>
+</html>

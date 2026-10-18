@@ -1,0 +1,79 @@
+text,sentiment,intent,topic
+Aa movie bahu saras che,Positive,Appreciation,Entertainment
+Mane aa song khub game che,Positive,Appreciation,Entertainment
+This movie mast che,Positive,Appreciation,Entertainment
+"Ending was amazing, maja avi gai",Positive,Appreciation,Entertainment
+Aa film ekdum best chhe,Positive,Appreciation,Entertainment
+Movie joi ne maja aavi,Positive,Statement,Entertainment
+The acting bahu sari hati,Positive,Appreciation,Entertainment
+Aa series is really good,Positive,Appreciation,Entertainment
+Song saras che and lyrics are nice,Positive,Appreciation,Entertainment
+Mane comedy movie game che,Positive,Statement,Entertainment
+Product bilkul good nathi,Negative,Complaint,Shopping
+Order haju sudhi aavyo nathi,Negative,Complaint,Shopping
+Quality bahu poor che,Negative,Complaint,Shopping
+This product kharab che,Negative,Complaint,Shopping
+"Delivery is late, please help",Negative,Complaint,Shopping
+"Mane refund joie, product damaged che",Negative,Request,Shopping
+Price too high che,Negative,Complaint,Shopping
+Service is not good at all,Negative,Complaint,Shopping
+Aa shoes comfortable nathi,Negative,Complaint,Shopping
+Wrong item moklyo che,Negative,Complaint,Shopping
+Please mane assignment moklo,Neutral,Request,Education
+Exam date shu che?,Neutral,Question,Education
+Can you explain this topic?,Neutral,Question,Education
+Kal college ma lecture che?,Neutral,Question,Education
+Mare project submit karvo che,Neutral,Statement,Education
+Please share notes with me,Neutral,Request,Education
+Assignment ni deadline kyare che?,Neutral,Question,Education
+Teacher e new task aapyu che,Neutral,Statement,Education
+How to solve this question?,Neutral,Question,Education
+Mane Python samajvu che,Neutral,Statement,Education
+This code is working fine,Positive,Statement,Technology
+Python is very useful,Positive,Appreciation,Technology
+Aa app mast work kare che,Positive,Appreciation,Technology
+Website loading fast che,Positive,Statement,Technology
+The new feature is helpful,Positive,Appreciation,Technology
+App crash thay che every time,Negative,Complaint,Technology
+My code ma error aave che,Negative,Complaint,Technology
+Website open thati nathi,Negative,Complaint,Technology
+Login issue solve thato nathi,Negative,Complaint,Technology
+Please fix this bug,Negative,Request,Technology
+Aaje weather is very nice,Positive,Statement,Weather
+Today bahu garmi che,Negative,Statement,Weather
+Kal rain thase?,Neutral,Question,Weather
+Is it going to rain today?,Neutral,Question,Weather
+Aaje thandi vadhi gai che,Neutral,Statement,Weather
+"Hello, kem cho?",Positive,Question,General
+Hu majama chu,Positive,Statement,General
+"Thank you, khub madad thai",Positive,Appreciation,General
+Mane aa samajatu nathi,Negative,Statement,General
+Can you please help me?,Neutral,Request,General
+What is your name?,Neutral,Question,General
+Where are you going?,Neutral,Question,General
+Please call me later,Neutral,Request,General
+I need some information,Neutral,Request,General
+Aa su che?,Neutral,Question,General
+Mane help karo please,Neutral,Request,General
+Tamne kem lagyu?,Neutral,Question,General
+This is not acceptable,Negative,Complaint,General
+"Very nice work, keep it up",Positive,Appreciation,General
+Aaje meeting che at 4 PM,Neutral,Statement,General
+Hu tomorrow office avish,Neutral,Statement,General
+Please send the details,Neutral,Request,General
+Mane order cancel karvo che,Negative,Request,Shopping
+Is this product available?,Neutral,Question,Shopping
+Aa laptop ni price ketli che?,Neutral,Question,Shopping
+"I like this design, khub saras",Positive,Appreciation,Shopping
+Bad customer support che,Negative,Complaint,Shopping
+Mare new phone buy karvo che,Neutral,Statement,Shopping
+How can I reset my password?,Neutral,Question,Technology
+Please explain API in simple words,Neutral,Request,Technology
+New update install thai gayu,Neutral,Statement,Technology
+This feature is confusing,Negative,Complaint,Technology
+Mane coding bahu game che,Positive,Statement,Technology
+The class was useful and interesting,Positive,Appreciation,Education
+I don't understand this chapter,Negative,Statement,Education
+Please extend the submission date,Neutral,Request,Education
+Exam paper bahu difficult hato,Negative,Statement,Education
+When will results be announced?,Neutral,Question,Education
